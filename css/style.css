@@ -147,21 +147,20 @@
  .modal__scroll {
    height: 80vh;
    overflow-y: auto;
-   scrollbar-width: thin;
-   scrollbar-color: var(--color-gray) transparent;
+   /*scrollbar-width: thin;
+   scrollbar-color: var(--color-gray) transparent;*/
  }
  
  .modal__scroll::-webkit-scrollbar {
-   width: 1px;
+   visibility: hidden;
  }
  
  .modal__scroll::-webkit-scrollbar-thumb {
-   background-color: transparent;
-   border-radius: 1px;
+  visibility: hidden;
  }
  
  .modal__scroll::-webkit-scrollbar-track {
-   background-color: transparent;
+  visibility: hidden;
  }
  
  .modal__title {
@@ -503,6 +502,7 @@
  
  .modal__btn {
    position: absolute;
+   width: 100%;
    left: 0;
    right: 0;
    top: 0;
